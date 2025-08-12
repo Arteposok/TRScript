@@ -9,4 +9,7 @@ I kinda ansvered this question already, but we'll get more technical now, this i
 `trs` to allow you to access the commands directly, to add a command (you are welcome to), you write a function in a file in scripts - please
 add any code not realted to that (like helper functions) to `utils.py` - and then add a command handler that consumes that function in main.py
 
+## P.S.
+You are welcome to you this with uv, it's ar simple as `sudo apt install uv` is,but it will help a lot with dependency management as it downloads tham into a venv automatically
+
 ## THANK YOU

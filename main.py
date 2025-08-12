@@ -13,7 +13,7 @@ def main():
 
 
 @main.command()
-@click.option("--message")
+@click.option("-m", "message")
 @click.option("--branch")
 def checkpoint(message: str | None, branch: str | None):
     checkpoint_func(c, message, branch)

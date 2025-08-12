@@ -29,8 +29,8 @@ def checkpoint_func(
         sys.exit(0)
 
     a = run_command(c, "git add .")
-    b = run_command(c, "git commit -m '{commit_msg}'")
-    d = run_command(c, "git push origin {branch}")
+    b = run_command(c, f"git commit -m '{commit_msg}'")
+    d = run_command(c, f"git push origin {branch}")
     if not (a and b and d):
         c.print("Not all commands exit successully", style="red bold")
         sys.exit(1)
